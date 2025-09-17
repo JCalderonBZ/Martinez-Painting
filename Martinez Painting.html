@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Martínez Painting</title>
+  <style>
+    :root {
+      --texto: #1a1a1a;
+      --secundario: #555;
+      --acento: #0d6efd;
+      --max-width: 1000px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--texto);
+      background-image: url('MartinezP.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Overlay global para mejorar legibilidad */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,0.7);
+      z-index: -1;
+    }
+
+    /* ====== ENCABEZADO ====== */
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .logo {
+      max-width: 250px;
+      margin-bottom: 1rem;
+    }
+    .site-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 600;
+    }
+    .site-subtitle {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: var(--secundario);
+    }
+
+    /* ====== CONTENIDO ====== */
+    main {
+      max-width: var(--max-width);
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+    .placeholder {
+      color: var(--secundario);
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .grid-2 { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--secundario);
+      border-top: 1px solid #eee;
+      background: rgba(255,255,255,0.9);
+      border-radius: 12px 12px 0 0;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    a { color: var(--acento); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Apartado para el logo -->
+    <img src="paiting.png" alt="Logo de la empresa" class="logo">
+    <h1 class="site-title"><!-- ESCRIBE AQUÍ EL NOMBRE DE LA EMPRESA --></h1>
+    <p class="site-subtitle"><!-- ESLOGAN O BREVE DESCRIPCIÓN --></p>
+  </header>
+
+  <main>
+    <section class="card" id="informacion">
+      <h2 class="section-title">Martínez Painting es una empresa especializada en servicios de pintura residencial, comercial e industrial, comprometida con ofrecer acabados de alta calidad y duraderos. Con años de experiencia en el sector, nos destacamos por nuestro profesionalismo, puntualidad y atención al detalle en cada proyecto.
+
+Nuestro equipo de pintores capacitados utiliza materiales de primera y técnicas modernas para garantizar resultados impecables que transforman espacios y reflejan la personalidad de nuestros clientes.
+
+En Martínez Painting creemos que cada superficie es una oportunidad para crear ambientes únicos y agradables, por ello brindamos asesoría personalizada en la elección de colores, texturas y acabados.
+
+Misión: Embellecer y proteger los espacios de nuestros clientes a través de soluciones de pintura confiables y estéticamente atractivas.
+Visión: Ser reconocidos como la empresa de pintura líder en la región, destacándonos por la calidad, innovación y satisfacción de nuestros clientes.</h2>
+      <p class="placeholder"><!-- Descripción general de la empresa --></p>
+      <p class="placeholder"><!-- Detalles adicionales --></p>
+    </section>
+
+    <section class="card" id="contactos">
+      <h2 class="section-title">Contactos</h2>
+      <div class="grid grid-2">
+        <div>
+          <p class="placeholder"><strong>Teléfono: (207)-618-0734 / (207)-766-8075</strong> <!-- +503 0000-0000 --></p>
+          <p class="placeholder"><strong>Correo: martinez503painting@gmail.com</strong> <!-- correo@tuempresa.com --></p>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Martínez Painting, Faith seesthe Invisble, Believes the Incredible and Receives the Impossible.
+  </footer>
+</body>
+</html>
